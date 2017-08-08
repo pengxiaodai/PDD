@@ -1,6 +1,4 @@
-# PDD
-MVC
-
+MVC：
 1.	View 通过delegate传送指令到 Controller
 2.	Controller 实现delegate，完成业务逻辑后，要求持有的Model 改变状态。
 3.	Controller 控制持有的View去显示 view持有的model的数据。
@@ -21,6 +19,7 @@ MVP优点：
 2.	更高效地使用，因为所有的逻辑交互都发生在一个地方—Presenter内部
 3.	一个Preseter可用于多个View，而不需要改变Presenter的逻辑（因为View的变化总是比Model的变化频繁）。
 4.	更便于测试。把逻辑放在Presenter中，就可以脱离用户接口来测试逻辑（单元测试）
+
 MVP：是MVC模式的变种。
 项目开发中，UI是容易变化的，且是多样的，一样的数据会有N种显示方式；业务逻辑也是比较容易变化的。为了使得应用具有较大的弹性，我们期望将UI、逻辑（UI的逻辑和业务逻辑）和数据隔离开来，而MVP是一个很好的选择。
 Presenter代替了Controller，它比Controller担当更多的任务，也更加复杂。Presenter处理事件，执行相应的逻辑，这些逻辑映射到Model操作Model。那些处理UI如何工作的代码基本上都位于Presenter。
