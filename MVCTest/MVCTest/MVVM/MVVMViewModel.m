@@ -28,7 +28,8 @@
 
 - (void)setWithModel:(MVVMModel*)mymodel
 {
-    self.mymodel = mymodel; //改
+    self.mymodel = mymodel;
+    NSLog(@"111");
     self.contentStr = mymodel.contentStr;
 }
 
