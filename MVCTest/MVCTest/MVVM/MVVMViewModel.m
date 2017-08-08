@@ -28,7 +28,7 @@
 
 - (void)setWithModel:(MVVMModel*)mymodel
 {
-    self.mymodel = mymodel;
+    self.mymodel = mymodel; //改
     self.contentStr = mymodel.contentStr;
 }
 
